@@ -1,0 +1,12 @@
+@import "src/shared/constants";
+.link {
+    text-decoration: none;
+    &:hover {
+        .text {
+            color: $blue;
+        }
+    }
+    .text {
+        color: $red;
+    }
+}

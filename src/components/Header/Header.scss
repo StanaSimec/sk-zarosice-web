@@ -1,0 +1,49 @@
+@import "src/shared/constants";
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    .description {
+        display: flex;
+    }
+    .logo {
+        height: 4rem;
+    }
+    .links {
+        display: none;
+        @media(min-width: $mobile-width) {
+            display: flex;
+            align-items: center;
+        }
+        .link {
+            margin: 0 1rem;
+        }
+    }
+    .name {
+        display: flex;
+        flex-direction: column;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        width: 2rem;
+        justify-content: center;
+        @media(min-width: $mobile-width) {
+            display: none;
+        }
+        .bar {
+            height: 0.1rem;
+            width: 100%;
+            background-color: $blue;
+            border-radius: 2px;
+            border: 1px solid $blue;
+            margin: 0.2rem;
+        }
+        &__open {
+            .bar {
+                background-color: $red;
+                border: 1px solid $red;
+            }
+        }
+    }
+}
