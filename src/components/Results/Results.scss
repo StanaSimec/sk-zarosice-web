@@ -1,0 +1,36 @@
+@import 'src/shared/constants';
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .banner {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid $blue;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+        min-width: 15rem;
+        background-color: $blue;
+        .info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .teams,
+        .score {
+            text-align: center;
+        }
+        .teams {
+            margin: 0.3rem;
+        }
+        .team-header {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

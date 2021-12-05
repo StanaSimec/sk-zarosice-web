@@ -1,4 +1,5 @@
 import Text from "../Text/Text";
+
 import "./Link.scss";
 
 const Link = ({ text, href, textIsHeader = false }) => {

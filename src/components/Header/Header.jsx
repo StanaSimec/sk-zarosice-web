@@ -1,10 +1,13 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import logo from '../../logo.png';
+import { RESULTS } from '../../shared/results';
 import Link from '../Link/Link';
+import Results from '../Results/Results';
 import Text from '../Text/Text';
 
 import './Header.scss';
+
 const Links = () => {
   return (
     <>
@@ -14,6 +17,7 @@ const Links = () => {
     </>
   );
 };
+
 const HeaderLinks = () => {
   return (
     <div className='links'>
@@ -29,7 +33,7 @@ const Logo = () => {
 const Name = () => {
   return (
     <div className='name'>
-      <Link text='SK Žarošice' textIsHeader={true} href='/' />
+      <Link text='SK Žarošice' textIsHeader={true} href='/'/>
       <Text text='Web sportovního klubu' />
     </div>
   );
@@ -58,8 +62,9 @@ const DropDownLinks = () => {
 
 const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+  const { A_TEAM } = RESULTS;
   return (
-    <div className="header">
+    <div className='header'>
       <div className='header-bar'>
         <div className='description'>
           <Logo />
@@ -72,6 +77,7 @@ const Header = () => {
         />
       </div>
       {isBurgerOpen && <DropDownLinks />}
+      <Results results={A_TEAM} />
     </div>
   );
 };
