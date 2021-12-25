@@ -1,0 +1,14 @@
+@import 'src/shared/styles';
+.results-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    .points {
+        width: $content-width;
+        min-width: $content-min-width;
+        th {
+            text-align: left;
+        }
+    }
+}

@@ -2,6 +2,12 @@ import classNames from 'classnames';
 
 import './Text.scss';
 
+export const TEXT_COLOR = {
+  WHITE: "white",
+  YELLOW: "yellow",
+  GREEN: "green"
+};
+
 const Text = ({ text, isHeader = false, classname = '', color = '' }) => {
   const Tag = isHeader ? 'h1' : 'p';
   return (

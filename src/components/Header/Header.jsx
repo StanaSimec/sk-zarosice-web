@@ -1,9 +1,10 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import logo from '../../logo.png';
-import { RESULTS } from '../../shared/results';
+import { RESULTS, POINTS } from '../../shared/results';
 import Link from '../Link/Link';
 import Results from '../Results/Results';
+import { Table } from '../Table/Table';
 import Text from '../Text/Text';
 
 import './Header.scss';
@@ -33,7 +34,7 @@ const Logo = () => {
 const Name = () => {
   return (
     <div className='name'>
-      <Link text='SK Žarošice' textIsHeader={true} href='/'/>
+      <Link text='SK Žarošice' textIsHeader={true} href='/' />
       <Text text='Web sportovního klubu' />
     </div>
   );
@@ -77,6 +78,7 @@ const Header = () => {
         />
       </div>
       {isBurgerOpen && <DropDownLinks />}
+      <Table points={POINTS.A_TEAM} />
       <Results results={A_TEAM} />
     </div>
   );
