@@ -1,10 +1,8 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import logo from '../../logo.png';
-import { RESULTS, POINTS } from '../../shared/results';
+import { LINKS } from '../../shared/links';
 import Link from '../Link/Link';
-import Results from '../Results/Results';
-import { Table } from '../Table/Table';
 import Text from '../Text/Text';
 
 import './Header.scss';
@@ -12,9 +10,9 @@ import './Header.scss';
 const Links = () => {
   return (
     <>
-      <Link href='/' text='A-tým' />
-      <Link href='/' text='Dorost' />
-      <Link href='/' text='Žáci' />
+      <Link href={LINKS.A_TEAM} text='A-tým' />
+      <Link href={LINKS.DOROST} text='Dorost' />
+      <Link href={LINKS.ZACI} text='Žáci' />
     </>
   );
 };
@@ -63,7 +61,6 @@ const DropDownLinks = () => {
 
 const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
-  const { A_TEAM } = RESULTS;
   return (
     <div className='header'>
       <div className='header-bar'>
@@ -78,8 +75,6 @@ const Header = () => {
         />
       </div>
       {isBurgerOpen && <DropDownLinks />}
-      <Table points={POINTS.A_TEAM} />
-      <Results results={A_TEAM} />
     </div>
   );
 };
