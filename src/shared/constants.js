@@ -13,6 +13,16 @@ export const TEAMS = {
   RATISKOVICE: 'Baník Ratiškovice B',
   LIPOV: 'FC Lipov',
   ZERAVICE: 'Sokol Žeravice',
+  TEMICE_PISEK: 'Těmice - Mor. Písek',
+  BRUMOVICE: 'Brumovice',
+  CHARVATSKA: 'Charvátská N. V.',
+  CEJKOVICE_HOVORANY: 'Čejkovice - Hovorany',
+  VNOROVY: 'Agro Vnorovy',
+  KOBYLI_KOBERICE: 'Kobylí - Kobeřice',
+  MILOTICE: 'FK Milotice',
+  KOSTELEC: 'SK Kostelec',
+  CEJC_HOVORANY: 'Čejč - Hovorany',
+  PISEK_ZERAVICE: 'Mor. Písek - Žeravice'
 };
 
 export const HOME_TEAM = TEAMS.ZAROSICE;

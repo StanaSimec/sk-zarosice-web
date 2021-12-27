@@ -9,21 +9,41 @@ import './App.scss';
 
 function App() {
   return (
-      <Router>
-        <Routes>
-          <Route
-            exact
-            path={LINKS.A_TEAM}
-            element={
-              <>
-                <Header />
-                <Table points={POINTS.A_TEAM} />
-                <Results results={RESULTS.A_TEAM} />
-              </>
-            }
-          ></Route>
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route
+          exact
+          path={LINKS.A_TEAM}
+          element={
+            <>
+              <Header />
+              <Table points={POINTS.A_TEAM} />
+              <Results results={RESULTS.A_TEAM} />
+            </>
+          }
+        ></Route>
+        <Route
+          path={LINKS.U19}
+          element={
+            <>
+              <Header />
+              <Table points={POINTS.U19} />
+              <Results results={RESULTS.U19} />
+            </>
+          }
+        ></Route>
+        <Route
+          path={LINKS.U15}
+          element={
+            <>
+              <Header />
+              <Table points={POINTS.U15} />
+              <Results results={RESULTS.U15} />
+            </>
+          }
+        ></Route>
+      </Routes>
+    </Router>
   );
 }
 

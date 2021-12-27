@@ -11,8 +11,8 @@ const Links = () => {
   return (
     <>
       <Link href={LINKS.A_TEAM} text='A-tým' />
-      <Link href={LINKS.DOROST} text='Dorost' />
-      <Link href={LINKS.ZACI} text='Žáci' />
+      <Link href={LINKS.U19} text='Dorost' />
+      <Link href={LINKS.U15} text='Žáci' />
     </>
   );
 };
