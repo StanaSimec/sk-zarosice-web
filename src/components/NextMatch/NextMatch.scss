@@ -11,11 +11,15 @@
         justify-content: center;
         align-items: center;
         width: $content-width;
+        min-width: $content-min-width;
         border: 1px solid $blue;
         border-radius: 1rem;
         padding: 1rem;
         margin: 1rem;
         min-width: $content-min-width;
         background-color: $blue;
+    }
+    .nextTeams {
+        margin-bottom: 1rem;
     }
 }

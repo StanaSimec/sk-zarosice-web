@@ -6,17 +6,24 @@
     color: $blue;
 }
 
-.header {
+.big {
     @include text-base();
     @media(max-width: $mobile-width-small) {
         font-size: 20px;
     }
 }
 
-.paragraph {
+.small {
     @include text-base();
     @media(max-width: $mobile-width) {
         font-size: 12px;
+    }
+}
+
+.middle {
+    @include text-base();
+    @media(max-width: $mobile-width) {
+        font-size: 16px;
     }
 }
 

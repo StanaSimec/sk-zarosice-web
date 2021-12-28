@@ -3,7 +3,7 @@ import { useState } from 'react';
 import logo from '../../logo.png';
 import { LINKS } from '../../shared/links';
 import Link from '../Link/Link';
-import Text from '../Text/Text';
+import Text, { TEXT_SIZE } from '../Text/Text';
 
 import './Header.scss';
 
@@ -32,7 +32,7 @@ const Logo = () => {
 const Name = () => {
   return (
     <div className='name'>
-      <Link text='SK Žarošice' textIsHeader={true} href='/' />
+      <Link text='SK Žarošice' href='/' size={TEXT_SIZE.BIG}/>
       <Text text='Web sportovního klubu' />
     </div>
   );
@@ -44,9 +44,9 @@ const Burger = ({ isOpen, onClick }) => {
       className={classNames({ burger: true, burger__open: isOpen })}
       onClick={onClick}
     >
-      <span class='bar'></span>
-      <span class='bar'></span>
-      <span class='bar'></span>
+      <span className='bar'></span>
+      <span className='bar'></span>
+      <span className='bar'></span>
     </div>
   );
 };

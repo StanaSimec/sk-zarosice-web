@@ -50,10 +50,12 @@ const Content = ({ points = [] }) => {
 
 export const Table = ({ points = [] }) => {
   return (
-    <div className="results-table">
+    <div className='results-table'>
       <table className='points'>
-        <Header />
-        <Content points={points} />
+        <tbody>
+          <Header />
+          <Content points={points} />
+        </tbody>
       </table>
     </div>
   );

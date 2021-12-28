@@ -7,7 +7,7 @@ export const NextMatch = ({ match }) => {
   return (
     <div className='nextMatch'>
       <div className='match'>
-        <Text text={`${homeTeam} : ${awayTeam}`} color={TEXT_COLOR.WHITE} />
+        <Text text={`${homeTeam} : ${awayTeam}`} color={TEXT_COLOR.WHITE} classname='nextTeams'/>
         <Text
           color={TEXT_COLOR.YELLOW}
           text={new Intl.DateTimeFormat('cs-CZ', {

@@ -1,4 +1,4 @@
-import Text, { TEXT_COLOR } from '../Text/Text';
+import Text, { TEXT_COLOR, TEXT_SIZE } from '../Text/Text';
 
 import './Results.scss';
 
@@ -49,7 +49,7 @@ const Banner = ({ result }) => {
       <Teams result={result} />
       <Text
         text={`${result.homeScore} : ${result.awayScore}`}
-        isHeader={true}
+        size={TEXT_SIZE.BIG}
         classname='score'
         color={TEXT_COLOR.WHITE}
       />
@@ -61,7 +61,7 @@ const Results = ({ results }) => {
   return (
     <div className='results'>
       {results.map((result) => (
-        <Banner result={result} />
+        <Banner result={result} key={`${result.date}-${result.homeScore}-${result.awayScore}`} />
       ))}
     </div>
   );

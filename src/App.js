@@ -5,8 +5,23 @@ import { Table } from './components/Table/Table';
 import { NEXT_MATCH, POINTS, RESULTS } from './shared/results';
 import { NextMatch } from './components/NextMatch/NextMatch';
 import Results from './components/Results/Results';
+import { CategoryHeader } from './components/CategoryHeader/CategoryHeader';
 
 import './App.scss';
+
+const Page = ({ nextMatch, points, results }) => {
+  return (
+    <>
+      <Header />
+      <CategoryHeader text='Následující utkání:' />
+      <NextMatch match={nextMatch} />
+      <CategoryHeader text='Tabulka:' />
+      <Table points={points} />
+      <CategoryHeader text='Odehraná utkání:' />
+      <Results results={results} />
+    </>
+  );
+};
 
 function App() {
   return (
@@ -16,34 +31,31 @@ function App() {
           exact
           path={LINKS.A_TEAM}
           element={
-            <>
-              <Header />
-              <NextMatch match={NEXT_MATCH.A_TEAM} />
-              <Table points={POINTS.A_TEAM} />
-              <Results results={RESULTS.A_TEAM} />
-            </>
+            <Page
+              nextMatch={NEXT_MATCH.A_TEAM}
+              points={POINTS.A_TEAM}
+              results={RESULTS.A_TEAM}
+            />
           }
         ></Route>
         <Route
           path={LINKS.U19}
           element={
-            <>
-              <Header />
-              <NextMatch match={NEXT_MATCH.U19} />
-              <Table points={POINTS.U19} />
-              <Results results={RESULTS.U19} />
-            </>
+            <Page
+              nextMatch={NEXT_MATCH.U19}
+              points={POINTS.U19}
+              results={RESULTS.U19}
+            />
           }
         ></Route>
         <Route
           path={LINKS.U15}
           element={
-            <>
-              <Header />
-              <NextMatch match={NEXT_MATCH.U15} />
-              <Table points={POINTS.U15} />
-              <Results results={RESULTS.U15} />
-            </>
+            <Page
+              nextMatch={NEXT_MATCH.U15}
+              points={POINTS.U15}
+              results={RESULTS.U15}
+            />
           }
         ></Route>
       </Routes>
