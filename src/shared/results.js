@@ -413,3 +413,21 @@ export const POINTS = {
     },
   ]
 };
+
+export const NEXT_MATCH = {
+  A_TEAM: {
+    homeTeam: TEAMS.ZAROSICE,
+    awayTeam: TEAMS.BUKOVANY,
+    date: new Date(2022, 3, 20, 14, 0)
+  },
+  U19: {
+    homeTeam: TEAMS.ZAROSICE,
+    awayTeam: TEAMS.TEMICE_PISEK,
+    date: new Date(2022, 4, 3, 13, 15)
+  },
+  U15: {
+    homeTeam: TEAMS.PETROV,
+    awayTeam: TEAMS.ZAROSICE,
+    date: new Date(2022, 4, 10, 10, 0)
+  }
+}
