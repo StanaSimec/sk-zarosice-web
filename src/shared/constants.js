@@ -26,3 +26,9 @@ export const TEAMS = {
 };
 
 export const HOME_TEAM = TEAMS.ZAROSICE;
+
+export const TEAM_CATEGORIES = {
+  A_TEAM: 'A-tým',
+  U19: 'Dorost',
+  U15: 'Žáci'
+};

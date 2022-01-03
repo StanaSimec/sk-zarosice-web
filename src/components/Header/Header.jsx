@@ -1,18 +1,23 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import logo from '../../logo.png';
+import { TEAM_CATEGORIES } from '../../shared/constants';
 import { LINKS } from '../../shared/links';
 import Link from '../Link/Link';
 import Text, { TEXT_SIZE } from '../Text/Text';
 
 import './Header.scss';
 
+const CategoryLink = ({prefix}) => {
+  return <Link href={LINKS[prefix]} text={TEAM_CATEGORIES[prefix]} />
+}
+
 const Links = () => {
   return (
     <>
-      <Link href={LINKS.A_TEAM} text='A-tým' />
-      <Link href={LINKS.U19} text='Dorost' />
-      <Link href={LINKS.U15} text='Žáci' />
+    <CategoryLink prefix="A_TEAM"/>
+    <CategoryLink prefix="U19"/>
+    <CategoryLink prefix="U15"/>
     </>
   );
 };

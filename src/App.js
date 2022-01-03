@@ -2,17 +2,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import { LINKS } from './shared/links';
 import { Table } from './components/Table/Table';
-import { NEXT_MATCH, POINTS, RESULTS } from './shared/results';
+import { COMPETITIONS, NEXT_MATCH, POINTS, RESULTS } from './shared/results';
 import { NextMatch } from './components/NextMatch/NextMatch';
 import Results from './components/Results/Results';
 import { CategoryHeader } from './components/CategoryHeader/CategoryHeader';
+import { TEAM_CATEGORIES } from './shared/constants';
 
 import './App.scss';
 
-const Page = ({ nextMatch, points, results }) => {
+const Page = ({ competition, nextMatch, points, results, category }) => {
   return (
     <>
       <Header />
+      <CategoryHeader text={`${category} : ${competition}`} />
       <CategoryHeader text='Následující utkání:' />
       <NextMatch match={nextMatch} />
       <CategoryHeader text='Tabulka:' />
@@ -35,6 +37,8 @@ function App() {
               nextMatch={NEXT_MATCH.A_TEAM}
               points={POINTS.A_TEAM}
               results={RESULTS.A_TEAM}
+              competition={COMPETITIONS.A_TEAM}
+              category={TEAM_CATEGORIES.A_TEAM}
             />
           }
         ></Route>
@@ -45,6 +49,8 @@ function App() {
               nextMatch={NEXT_MATCH.U19}
               points={POINTS.U19}
               results={RESULTS.U19}
+              competition={COMPETITIONS.U19}
+              category={TEAM_CATEGORIES.U19}
             />
           }
         ></Route>
@@ -55,6 +61,8 @@ function App() {
               nextMatch={NEXT_MATCH.U15}
               points={POINTS.U15}
               results={RESULTS.U15}
+              competition={COMPETITIONS.U15}
+              category={TEAM_CATEGORIES.U15}
             />
           }
         ></Route>
