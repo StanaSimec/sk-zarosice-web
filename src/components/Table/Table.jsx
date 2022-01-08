@@ -42,9 +42,17 @@ const Row = ({ point, position = 0 }) => {
 };
 
 const Content = ({ points = [] }) => {
-  const sorted = points.sort((a, b) => a > b);
-  return sorted.map((point, index) => (
-    <Row point={point} key={point.team} position={index + 1} />
+  const sorted = points.sort((a, b) => {
+    if (a.position < b.position) {
+      return -1;
+    }
+    if(a.position > b.position){
+      return 1;
+    }
+    return 0;
+  });
+  return sorted.map((point) => (
+    <Row point={point} key={point.team} position={point.position} />
   ));
 };
 
