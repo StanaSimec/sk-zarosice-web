@@ -38,7 +38,7 @@ const Name = () => {
   return (
     <div className='name'>
       <Link text='SK Žarošice' href='/' size={TEXT_SIZE.BIG}/>
-      <Text text='Web sportovního klubu' />
+      <Text text='Sportovní klub' />
     </div>
   );
 };
