@@ -462,6 +462,27 @@ export const NEXT_MATCH = {
   }
 }
 
+export const FRIENDLY_MATCHES = {
+  A_TEAM: [{
+    homeTeam: TEAMS.ZAROSICE,
+    awayTeam: TEAMS.NASEDLOVICE,
+    date: new Date(2022, 2, 27, 12, 0),
+    place: "Umělá tráva Dambořice"
+  },
+  {
+    homeTeam: TEAMS.ZAROSICE,
+    awayTeam: TEAMS.POZORICE,
+    date: new Date(2022, 3, 5, 10, 0),
+    place: "Umělá tráva Otnice"
+  },
+  {
+    homeTeam: TEAMS.ZAROSICE,
+    awayTeam: TEAMS.BOLERADICE,
+    date: new Date(2022, 3, 13, 10, 0),
+    place: "Boleradice"
+  }]
+}
+
 export const COMPETITIONS = {
   A_TEAM: "Okresní přebor muži",
   U19: "Okresní přebor dorost",

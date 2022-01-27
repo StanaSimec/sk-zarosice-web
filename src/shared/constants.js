@@ -22,7 +22,10 @@ export const TEAMS = {
   MILOTICE: 'FK Milotice',
   KOSTELEC: 'SK Kostelec',
   CEJC_HOVORANY: 'Čejč - Hovorany',
-  PISEK_ZERAVICE: 'Mor. Písek - Žeravice'
+  PISEK_ZERAVICE: 'Mor. Písek - Žeravice',
+  NASEDLOVICE: 'Moravia Následlovice',
+  POZORICE: 'SK Pozořice',
+  BOLERADICE: 'SK Boleradice'
 };
 
 export const HOME_TEAM = TEAMS.ZAROSICE;

@@ -2,20 +2,29 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import { LINKS } from './shared/links';
 import { Table } from './components/Table/Table';
-import { COMPETITIONS, NEXT_MATCH, POINTS, RESULTS } from './shared/results';
+import { COMPETITIONS, FRIENDLY_MATCHES, NEXT_MATCH, POINTS, RESULTS } from './shared/results';
 import { NextMatch } from './components/NextMatch/NextMatch';
 import Results from './components/Results/Results';
 import { CategoryHeader } from './components/CategoryHeader/CategoryHeader';
 import { TEAM_CATEGORIES } from './shared/constants';
+import { FriendlyMatch } from './components/FriendlyMatch/FriendlyMatch';
 
 import './App.scss';
 
-const Page = ({ competition, nextMatch, points, results, category }) => {
+const Page = ({
+  competition,
+  nextMatch,
+  points,
+  results,
+  category,
+  frienldyMatch,
+}) => {
   return (
     <>
       <Header />
       <CategoryHeader text={`${category} : ${competition}`} />
-      <CategoryHeader text='Následující utkání:' />
+      {frienldyMatch && <FriendlyMatch matches={frienldyMatch} />}
+      <CategoryHeader text='Následující mistrovské utkání:' />
       <NextMatch match={nextMatch} />
       <CategoryHeader text='Tabulka:' />
       <Table points={points} />
@@ -35,6 +44,7 @@ function App() {
           element={
             <Page
               nextMatch={NEXT_MATCH.A_TEAM}
+              frienldyMatch={FRIENDLY_MATCHES.A_TEAM}
               points={POINTS.A_TEAM}
               results={RESULTS.A_TEAM}
               competition={COMPETITIONS.A_TEAM}
