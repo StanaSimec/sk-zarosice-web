@@ -25,7 +25,8 @@ export const TEAMS = {
   PISEK_ZERAVICE: 'Mor. Písek - Žeravice',
   NASEDLOVICE: 'Moravia Následlovice',
   POZORICE: 'SK Pozořice',
-  BOLERADICE: 'SK Boleradice'
+  BOLERADICE: 'SK Boleradice',
+  KLOBOUKY: 'Kloubouky u Brna'
 };
 
 export const HOME_TEAM = TEAMS.ZAROSICE;

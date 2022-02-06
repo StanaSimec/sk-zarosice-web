@@ -5,7 +5,9 @@
     .header-bar {
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
+        padding-bottom: 1rem;
+        margin: 1rem;
+        border-bottom: 1px solid $blue;
         .description {
             display: flex;
         }

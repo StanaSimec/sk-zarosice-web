@@ -466,6 +466,12 @@ export const FRIENDLY_MATCHES = {
   A_TEAM: [
     {
       homeTeam: TEAMS.ZAROSICE,
+      awayTeam: TEAMS.KLOBOUKY,
+      date: new Date(2022, 2 - 1, 19, 13, 0),
+      place: 'Umělá tráva Dambořice',
+    },
+    {
+      homeTeam: TEAMS.ZAROSICE,
       awayTeam: TEAMS.NASEDLOVICE,
       date: new Date(2022, 2 - 1, 27, 12, 0),
       place: 'Umělá tráva Dambořice',
