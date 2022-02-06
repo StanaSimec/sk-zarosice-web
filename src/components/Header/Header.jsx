@@ -4,7 +4,7 @@ import logo from '../../logo.png';
 import { TEAM_CATEGORIES } from '../../shared/constants';
 import { LINKS } from '../../shared/links';
 import Link from '../Link/Link';
-import Text, { TEXT_SIZE } from '../Text/Text';
+import { TEXT_SIZE } from '../Text/Text';
 
 import './Header.scss';
 
@@ -38,7 +38,6 @@ const Name = () => {
   return (
     <div className='name'>
       <Link text='SK Žarošice' href='/' size={TEXT_SIZE.BIG} />
-      <Text text='Sportovní klub' />
     </div>
   );
 };
