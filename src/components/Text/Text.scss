@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Manrope:wght@300&family=Montserrat&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Jost:wght@300&family=Manrope:wght@300&family=Montserrat&family=Urbanist&display=swap');
 @import 'src/shared/styles';
 @mixin text-base {
     margin: 0;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: $blue;
 }
 

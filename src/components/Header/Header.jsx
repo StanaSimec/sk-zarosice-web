@@ -8,16 +8,16 @@ import Text, { TEXT_SIZE } from '../Text/Text';
 
 import './Header.scss';
 
-const CategoryLink = ({prefix}) => {
-  return <Link href={LINKS[prefix]} text={TEAM_CATEGORIES[prefix]} />
-}
+const CategoryLink = ({ prefix }) => {
+  return <Link href={LINKS[prefix]} text={TEAM_CATEGORIES[prefix]} />;
+};
 
 const Links = () => {
   return (
     <>
-    <CategoryLink prefix="A_TEAM"/>
-    <CategoryLink prefix="U19"/>
-    <CategoryLink prefix="U15"/>
+      <CategoryLink prefix='A_TEAM' />
+      <CategoryLink prefix='U19' />
+      <CategoryLink prefix='U15' />
     </>
   );
 };
@@ -37,7 +37,7 @@ const Logo = () => {
 const Name = () => {
   return (
     <div className='name'>
-      <Link text='SK Žarošice' href='/' size={TEXT_SIZE.BIG}/>
+      <Link text='SK Žarošice' href='/' size={TEXT_SIZE.BIG} />
       <Text text='Sportovní klub' />
     </div>
   );
@@ -68,7 +68,12 @@ const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   return (
     <div className='header'>
-      <div className='header-bar'>
+      <div
+        className={classNames({
+          'header-bar': true,
+          'header-bar__bordered': !isBurgerOpen,
+        })}
+      >
         <div className='description'>
           <Logo />
           <Name />
