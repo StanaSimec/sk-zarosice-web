@@ -36,7 +36,7 @@
 .middle {
     @include text-base();
     @media(max-width: $mobile-width) {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
