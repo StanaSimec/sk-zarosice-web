@@ -37,7 +37,12 @@ const Logo = () => {
 const Name = () => {
   return (
     <div className='name'>
-      <Link text='SK Žarošice' href='/' size={TEXT_SIZE.BIG} />
+      <Link
+        text='SK Žarošice'
+        href='/'
+        size={TEXT_SIZE.BIG}
+        isMainHeader={true}
+      />
     </div>
   );
 };

@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Jost:wght@300&family=Manrope:wght@300&family=Montserrat&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Source+Sans+Pro:wght@300&display=swap');
 @import 'src/shared/styles';
 @mixin text-base {
     margin: 0;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: $blue;
+}
+
+@mixin header-base {
+    margin: 0;
+    font-family: 'Alegreya', serif !important;
+    color: $blue;
+}
+
+.mainHeader {
+    @include header-base();
+    @media(max-width: $mobile-width-small) {
+        font-size: 20px;
+    }
 }
 
 .big {
