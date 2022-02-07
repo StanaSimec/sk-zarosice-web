@@ -492,62 +492,7 @@ export const FRIENDLY_MATCHES = {
 };
 
 export const COMPETITIONS = {
-  A_TEAM: 'Okresní přebor muži',
-  U19: 'Okresní přebor dorost',
-  U15: 'Okresní soutěž starší žáci',
-};
-
-const MATCH_PLAN = {
-  U15: [
-    {
-      homeTeam: TEAMS.PETROV,
-      awayTeam: TEAMS.ZAROSICE,
-      date: new Date(2022, 4 - 1, 10, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.MILOTICE,
-      awayTeam: TEAMS.ZAROSICE,
-      date: new Date(2022, 4 - 1, 17, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.CEJC_HOVORANY,
-      awayTeam: TEAMS.ZAROSICE,
-      date: new Date(2022, 4 - 1, 24, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.ZAROSICE,
-      awayTeam: TEAMS.PISEK_ZERAVICE,
-      date: new Date(2022, 5 - 1, 1, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.ZAROSICE,
-      awayTeam: TEAMS.PISEK_ZERAVICE,
-      date: new Date(2022, 5 - 1, 1, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.ZAROSICE,
-      awayTeam: TEAMS.CEJC_HOVORANY,
-      date: new Date(2022, 5 - 1, 10, 17, 30),
-    },
-    {
-      homeTeam: TEAMS.ZAROSICE,
-      awayTeam: TEAMS.PETROV,
-      date: new Date(2022, 5 - 1, 15, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.ZAROSICE,
-      awayTeam: TEAMS.MILOTICE,
-      date: new Date(2022, 5 - 1, 22, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.ZAROSICE,
-      awayTeam: TEAMS.CEJC_HOVORANY,
-      date: new Date(2022, 5 - 1, 29, 10, 0),
-    },
-    {
-      homeTeam: TEAMS.PISEK_ZERAVICE,
-      awayTeam: TEAMS.ZAROSICE,
-      date: new Date(2022, 6 - 1, 5, 10, 0),
-    },
-  ],
+  A_TEAM: 'Okresní přebor',
+  U19: 'Okresní přebor',
+  U15: 'Okresní soutěž',
 };

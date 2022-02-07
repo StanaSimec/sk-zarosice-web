@@ -24,6 +24,7 @@ const Teams = ({ result }) => {
             ? TEXT_COLOR.GREEN
             : TEXT_COLOR.WHITE
         }
+        size={TEXT_SIZE.MIDDLE}
       />
       <Text text=':' classname='teams' color={TEXT_COLOR.WHITE} />
       <Text
@@ -34,6 +35,7 @@ const Teams = ({ result }) => {
             ? TEXT_COLOR.GREEN
             : TEXT_COLOR.WHITE
         }
+        size={TEXT_SIZE.MIDDLE}
       />
     </div>
   );
@@ -61,7 +63,10 @@ const Results = ({ results }) => {
   return (
     <div className='results'>
       {results.map((result) => (
-        <Banner result={result} key={`${result.date}-${result.homeScore}-${result.awayScore}`} />
+        <Banner
+          result={result}
+          key={`${result.date}-${result.homeScore}-${result.awayScore}`}
+        />
       ))}
     </div>
   );

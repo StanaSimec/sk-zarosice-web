@@ -24,7 +24,7 @@ const Page = ({
       <Header />
       <CategoryHeader text={`${category} : ${competition}`} />
       {frienldyMatch && <FriendlyMatch matches={frienldyMatch} />}
-      <CategoryHeader text='Následující mistrovské utkání:' />
+      <CategoryHeader text='Mistrovské utkání:' />
       <NextMatch match={nextMatch} />
       <CategoryHeader text='Tabulka:' />
       <Table points={points} />
