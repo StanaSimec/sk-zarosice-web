@@ -1,19 +1,40 @@
-import Text, { TEXT_COLOR, TEXT_SIZE } from '../Text/Text';
+import Text, { TEXT_COLOR, TEXT_SIZE } from "../Text/Text";
 
-import './NextMatch.scss';
+import "./NextMatch.scss";
 
 export const NextMatch = ({ match }) => {
   const { homeTeam, awayTeam, date, place } = match;
-  var intlOptions = { weekday: 'long', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'};
+  const intlOptions = {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  };
+  const isOutdated = date < Date.now();
+  if (isOutdated) {
+    return null;
+  }
   return (
-    <div className='nextMatch'>
-      <div className='match'>
-        <Text text={`${homeTeam} : ${awayTeam}`} color={TEXT_COLOR.WHITE} size={TEXT_SIZE.MIDDLE} classname='nextTeams'/>
+    <div className="nextMatch">
+      <div className="match">
+        <Text
+          text={`${homeTeam} : ${awayTeam}`}
+          color={TEXT_COLOR.WHITE}
+          size={TEXT_SIZE.MIDDLE}
+          classname="nextTeams"
+        />
         <Text
           color={TEXT_COLOR.YELLOW}
-          text={new Intl.DateTimeFormat('cs-CZ', intlOptions).format(date)}
+          text={new Intl.DateTimeFormat("cs-CZ", intlOptions).format(date)}
         />
-        {place && <Text text={place} color={TEXT_COLOR.YELLOW} classname='friendlyMatch'/>}
+        {place && (
+          <Text
+            text={place}
+            color={TEXT_COLOR.YELLOW}
+            classname="friendlyMatch"
+          />
+        )}
       </div>
     </div>
   );
