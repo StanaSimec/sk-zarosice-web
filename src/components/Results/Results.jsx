@@ -60,7 +60,7 @@ const Banner = ({ result }) => {
   );
 };
 
-const Results = ({ results }) => {
+export const Results = ({ results }) => {
   return (
     <>
       <CategoryHeader text="Odehraná utkání:" />
@@ -75,5 +75,3 @@ const Results = ({ results }) => {
     </>
   );
 };
-
-export default Results;

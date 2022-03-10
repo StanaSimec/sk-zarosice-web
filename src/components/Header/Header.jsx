@@ -68,7 +68,7 @@ const DropDownLinks = () => {
   );
 };
 
-const Header = () => {
+export const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   return (
     <div className="header">
@@ -93,4 +93,3 @@ const Header = () => {
   );
 };
 
-export default Header;

@@ -1,15 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
-import { LINKS } from "./constants/constants";
-import { Table } from "./components/Table/Table";
-import { RESULTS } from "./data/results";
-import { FRIENDLY_MATCHES, NEXT_MATCH } from "./data/nextMatches";
-import { POINTS } from "./data/points";
-import { NextMatch } from "./components/NextMatch/NextMatch";
-import Results from "./components/Results/Results";
-import { CategoryHeader } from "./components/CategoryHeader/CategoryHeader";
-import { TEAM_CATEGORIES, COMPETITIONS } from "./constants/constants";
-import { FriendlyMatches } from "./components/FriendlyMatches/FriendlyMatches";
+import { Header, Table, FriendlyMatches, CategoryHeader, Results, NextMatch } from "./components";
+import { LINKS, TEAM_CATEGORIES, COMPETITIONS } from "./constants";
+import { RESULTS, FRIENDLY_MATCHES, NEXT_MATCH, POINTS } from "./data";
 
 const Page = ({
   competition,
@@ -17,13 +9,13 @@ const Page = ({
   points,
   results,
   category,
-  frienldyMatch,
+  friendlyMatch,
 }) => {
   return (
     <>
       <Header />
       <CategoryHeader text={`${category} : ${competition}`} />
-      <FriendlyMatches matches={frienldyMatch} />
+      <FriendlyMatches matches={friendlyMatch} />
       <NextMatch match={nextMatch} />
       <Table points={points} />
       <Results results={results} />
@@ -41,7 +33,7 @@ function App() {
           element={
             <Page
               nextMatch={NEXT_MATCH.A_TEAM}
-              frienldyMatch={FRIENDLY_MATCHES.A_TEAM}
+              friendlyMatch={FRIENDLY_MATCHES.A_TEAM}
               points={POINTS.A_TEAM}
               results={RESULTS.A_TEAM}
               competition={COMPETITIONS.A_TEAM}
