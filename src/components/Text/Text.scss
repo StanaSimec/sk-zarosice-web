@@ -1,57 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Source+Sans+Pro:wght@300&display=swap');
-@import 'src/shared/styles';
+@import "src/shared/styles";
+
 @mixin text-base {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: $blue;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: $blue;
 }
 
 @mixin header-base {
-    margin: 0;
-    font-family: 'Alegreya', serif !important;
-    color: $blue;
+  margin: 0;
+  font-family: "Alegreya", serif !important;
+  color: $blue;
 }
 
 .mainHeader {
-    @include header-base();
-    @media(max-width: $mobile-width-small) {
-        font-size: 20px;
-    }
+  @include header-base();
+  @media (max-width: $mobile-width-small) {
+    font-size: 20px;
+  }
 }
 
 .big {
-    @include text-base();
-    @media(max-width: $mobile-width-small) {
-        font-size: 20px;
-    }
+  @include text-base();
+  @media (max-width: $mobile-width-small) {
+    font-size: 20px;
+  }
 }
 
 .small {
-    @include text-base();
-    @media(max-width: $mobile-width) {
-        font-size: 12px;
-    }
+  @include text-base();
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+  }
 }
 
 .middle {
-    @include text-base();
-    @media(max-width: $mobile-width) {
-        font-size: 14px;
-    }
+  @include text-base();
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
 }
 
 .white {
-    color: $white;
+  color: $white;
 }
 
 .yellow {
-    color: $yellow;
+  color: $yellow;
 }
 
 .green {
-    color: $green;
+  color: $green;
 }
 
 .red {
-    color: $red;
+  color: $red;
 }
