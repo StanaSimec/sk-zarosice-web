@@ -1,24 +1,25 @@
-import Text, { TEXT_COLOR, TEXT_SIZE } from '../Text/Text';
+import { CategoryHeader } from "../CategoryHeader/CategoryHeader";
+import Text, { TEXT_COLOR, TEXT_SIZE } from "../Text/Text";
 
-import './Results.scss';
+import "./Results.scss";
 
 const BannerDate = ({ date }) => {
   return (
     <Text
-      text={new Intl.DateTimeFormat('cs-CZ', {
-        dateStyle: 'long',
+      text={new Intl.DateTimeFormat("cs-CZ", {
+        dateStyle: "long",
       }).format(date)}
-      color='yellow'
+      color="yellow"
     />
   );
 };
 
 const Teams = ({ result }) => {
   return (
-    <div className='team-header'>
+    <div className="team-header">
       <Text
         text={result.homeTeam}
-        classname='teams'
+        classname="teams"
         color={
           result.homeScore > result.awayScore
             ? TEXT_COLOR.GREEN
@@ -26,10 +27,10 @@ const Teams = ({ result }) => {
         }
         size={TEXT_SIZE.MIDDLE}
       />
-      <Text text=':' classname='teams' color={TEXT_COLOR.WHITE} />
+      <Text text=":" classname="teams" color={TEXT_COLOR.WHITE} />
       <Text
         text={result.awayTeam}
-        classname='teams'
+        classname="teams"
         color={
           result.awayScore > result.homeScore
             ? TEXT_COLOR.GREEN
@@ -43,8 +44,8 @@ const Teams = ({ result }) => {
 
 const Banner = ({ result }) => {
   return (
-    <div className='banner'>
-      <div className='info'>
+    <div className="banner">
+      <div className="info">
         <Text text={`${result.round}. kolo`} color={TEXT_COLOR.YELLOW} />
         <BannerDate date={result.date} />
       </div>
@@ -52,7 +53,7 @@ const Banner = ({ result }) => {
       <Text
         text={`${result.homeScore} : ${result.awayScore}`}
         size={TEXT_SIZE.BIG}
-        classname='score'
+        classname="score"
         color={TEXT_COLOR.WHITE}
       />
     </div>
@@ -61,14 +62,17 @@ const Banner = ({ result }) => {
 
 const Results = ({ results }) => {
   return (
-    <div className='results'>
-      {results.map((result) => (
-        <Banner
-          result={result}
-          key={`${result.date}-${result.homeScore}-${result.awayScore}`}
-        />
-      ))}
-    </div>
+    <>
+      <CategoryHeader text="Odehraná utkání:" />
+      <div className="results">
+        {results.map((result) => (
+          <Banner
+            result={result}
+            key={`${result.date}-${result.homeScore}-${result.awayScore}`}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 

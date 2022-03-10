@@ -1,15 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import { LINKS } from './shared/links';
-import { Table } from './components/Table/Table';
-import { COMPETITIONS, FRIENDLY_MATCHES, NEXT_MATCH, POINTS, RESULTS } from './shared/results';
-import { NextMatch } from './components/NextMatch/NextMatch';
-import Results from './components/Results/Results';
-import { CategoryHeader } from './components/CategoryHeader/CategoryHeader';
-import { TEAM_CATEGORIES } from './shared/constants';
-import { FriendlyMatch } from './components/FriendlyMatch/FriendlyMatch';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import { LINKS } from "./shared/links";
+import { Table } from "./components/Table/Table";
+import {
+  COMPETITIONS,
+  FRIENDLY_MATCHES,
+  NEXT_MATCH,
+  POINTS,
+  RESULTS,
+} from "./shared/results";
+import { NextMatch } from "./components/NextMatch/NextMatch";
+import Results from "./components/Results/Results";
+import { CategoryHeader } from "./components/CategoryHeader/CategoryHeader";
+import { TEAM_CATEGORIES } from "./shared/constants";
+import { FriendlyMatch } from "./components/FriendlyMatch/FriendlyMatch";
 
-import './App.scss';
+import "./App.scss";
 
 const Page = ({
   competition,
@@ -23,12 +29,9 @@ const Page = ({
     <>
       <Header />
       <CategoryHeader text={`${category} : ${competition}`} />
-      {frienldyMatch && <FriendlyMatch matches={frienldyMatch} />}
-      <CategoryHeader text='Mistrovské utkání:' />
+      <FriendlyMatch matches={frienldyMatch} />
       <NextMatch match={nextMatch} />
-      <CategoryHeader text='Tabulka:' />
       <Table points={points} />
-      <CategoryHeader text='Odehraná utkání:' />
       <Results results={results} />
     </>
   );

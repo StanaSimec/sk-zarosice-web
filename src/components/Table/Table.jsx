@@ -1,27 +1,28 @@
-import { HOME_TEAM } from '../../shared/constants';
-import Text, { TEXT_COLOR } from '../Text/Text';
+import { HOME_TEAM } from "../../shared/constants";
+import { CategoryHeader } from "../CategoryHeader/CategoryHeader";
+import Text, { TEXT_COLOR } from "../Text/Text";
 
-import './Table.scss';
+import "./Table.scss";
 
 const Header = () => (
   <tr>
     <th>
-      <Text text={'#'} />
+      <Text text={"#"} />
     </th>
     <th>
-      <Text text={'Klub'} />
+      <Text text={"Klub"} />
     </th>
     <th>
-      <Text text={'Z'} />
+      <Text text={"Z"} />
     </th>
     <th>
-      <Text text={'B'} />
+      <Text text={"B"} />
     </th>
   </tr>
 );
 
 const Row = ({ point, position = 0 }) => {
-  const { team = '', points = 0, matches = 0 } = point;
+  const { team = "", points = 0, matches = 0 } = point;
   const color = team === HOME_TEAM ? TEXT_COLOR.GREEN : undefined;
   return (
     <tr>
@@ -46,7 +47,7 @@ const Content = ({ points = [] }) => {
     if (a.position < b.position) {
       return -1;
     }
-    if(a.position > b.position){
+    if (a.position > b.position) {
       return 1;
     }
     return 0;
@@ -58,13 +59,16 @@ const Content = ({ points = [] }) => {
 
 export const Table = ({ points = [] }) => {
   return (
-    <div className='results-table'>
-      <table className='points'>
-        <tbody>
-          <Header />
-          <Content points={points} />
-        </tbody>
-      </table>
-    </div>
+    <>
+      <CategoryHeader text="Tabulka:" />
+      <div className="results-table">
+        <table className="points">
+          <tbody>
+            <Header />
+            <Content points={points} />
+          </tbody>
+        </table>
+      </div>
+    </>
   );
 };
