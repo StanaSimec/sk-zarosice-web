@@ -485,7 +485,7 @@ export const FRIENDLY_MATCHES = {
     {
       homeTeam: TEAMS.ZAROSICE,
       awayTeam: TEAMS.BOLERADICE,
-      date: new Date(2022, 3 - 1, 13, 10, 0),
+      date: new Date(2022, 3 - 1, 13, 12, 0),
       place: 'UT Dambořice',
     },
   ],
