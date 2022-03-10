@@ -1,7 +1,7 @@
 import { CategoryHeader } from "../CategoryHeader/CategoryHeader";
 import { Match } from "../Match/Match";
 
-export const FriendlyMatch = ({ matches = [] }) => {
+export const FriendlyMatches = ({ matches = [] }) => {
   const now = Date.now();
   const matchesToDisplay =
     matches.length && matches.filter((match) => match.date >= now);

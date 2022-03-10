@@ -13,7 +13,7 @@ import { NextMatch } from "./components/NextMatch/NextMatch";
 import Results from "./components/Results/Results";
 import { CategoryHeader } from "./components/CategoryHeader/CategoryHeader";
 import { TEAM_CATEGORIES } from "./shared/constants";
-import { FriendlyMatch } from "./components/FriendlyMatch/FriendlyMatch";
+import { FriendlyMatches } from "./components/FriendlyMatches/FriendlyMatches";
 
 import "./App.scss";
 
@@ -29,7 +29,7 @@ const Page = ({
     <>
       <Header />
       <CategoryHeader text={`${category} : ${competition}`} />
-      <FriendlyMatch matches={frienldyMatch} />
+      <FriendlyMatches matches={frienldyMatch} />
       <NextMatch match={nextMatch} />
       <Table points={points} />
       <Results results={results} />
