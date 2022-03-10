@@ -1,28 +1,32 @@
-@import 'src/shared/styles';
+@import "src/constants/styles";
+
 .nextMatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .match {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    .match {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: $content-width;
-        min-width: $content-min-width;
-        border: 1px solid $blue;
-        border-radius: $borderRound;
-        padding: 1rem;
-        margin: 1rem;
-        min-width: $content-min-width;
-        background-color: $blue;
-    }
-    .nextTeams {
-        margin-bottom: 0.5rem;
-    }
-    .friendlyMatch {
-        margin-top: 0.5rem;
-    }
+    width: $content-width;
+    min-width: $content-min-width;
+    border: 1px solid $blue;
+    border-radius: $borderRound;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: $content-min-width;
+    background-color: $blue;
+  }
+
+  .nextTeams {
+    margin-bottom: 0.5rem;
+  }
+  
+  .friendlyMatch {
+    margin-top: 0.5rem;
+  }
 }

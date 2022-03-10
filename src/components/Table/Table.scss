@@ -1,13 +1,16 @@
-@import 'src/shared/styles';
+@import 'src/constants/styles';
+
 .results-table {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 1rem;
+
     .points {
         width: $content-width;
         min-width: $content-min-width;
         padding-right: 1rem;
+        
         th {
             text-align: left;
         }

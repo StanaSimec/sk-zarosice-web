@@ -36,3 +36,15 @@ export const TEAM_CATEGORIES = {
   U19: 'Dorost',
   U15: 'Žáci'
 };
+
+export const COMPETITIONS = {
+  A_TEAM: 'Okresní přebor',
+  U19: 'Okresní přebor',
+  U15: 'Okresní soutěž',
+};
+
+export const LINKS = {
+  A_TEAM: "/",
+  U19: "/dorost",
+  U15: "/zaci", 
+};

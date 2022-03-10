@@ -1,6 +1,8 @@
-@import "src/shared/styles";
+@import 'src/constants/styles';
+
 .link {
     text-decoration: none;
+    
     &:hover {
         .text {
             color: $blue;

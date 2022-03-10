@@ -1,37 +1,43 @@
-@import 'src/shared/styles';
+@import "src/constants/styles";
+
 .results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .banner {
+    width: $content-width;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    .banner {
-        width: $content-width;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid $blue;
-        border-radius: $borderRound;
-        padding: 1rem;
-        margin: 1rem;
-        min-width: $content-min-width;
-        background-color: $blue;
-        .info {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .teams,
-        .score {
-            text-align: center;
-        }
-        .teams {
-            margin: 0.3rem;
-            margin-top: 0.5rem;
-        }
-        .team-header {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-        }
+    border: 1px solid $blue;
+    border-radius: $borderRound;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: $content-min-width;
+    background-color: $blue;
+
+    .info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
+
+    .teams,
+    .score {
+      text-align: center;
+    }
+
+    .teams {
+      margin: 0.3rem;
+      margin-top: 0.5rem;
+    }
+    
+    .team-header {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
 }

@@ -1,11 +1,11 @@
-import { Link as RouterLink } from 'react-router-dom';
-import Text, { TEXT_COLOR, TEXT_SIZE } from '../Text/Text';
+import { Link as RouterLink } from "react-router-dom";
+import Text, { TEXT_COLOR, TEXT_SIZE } from "../Text/Text";
 
-import './Link.scss';
+import "./Link.scss";
 
-const Link = ({ text, href, size = TEXT_SIZE.SMALL, isMainHeader = false}) => {
+const Link = ({ text, href, size = TEXT_SIZE.SMALL, isMainHeader = false }) => {
   return (
-    <RouterLink to={href} className='link'>
+    <RouterLink to={href} className="link">
       <Text
         text={text}
         size={size}

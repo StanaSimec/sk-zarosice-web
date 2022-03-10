@@ -1,21 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import { LINKS } from "./shared/links";
+import { LINKS } from "./constants/constants";
 import { Table } from "./components/Table/Table";
-import {
-  COMPETITIONS,
-  FRIENDLY_MATCHES,
-  NEXT_MATCH,
-  POINTS,
-  RESULTS,
-} from "./shared/results";
+import { FRIENDLY_MATCHES, NEXT_MATCH, RESULTS } from "./data/results";
+import { POINTS } from "./data/points";
 import { NextMatch } from "./components/NextMatch/NextMatch";
 import Results from "./components/Results/Results";
 import { CategoryHeader } from "./components/CategoryHeader/CategoryHeader";
-import { TEAM_CATEGORIES } from "./shared/constants";
+import { TEAM_CATEGORIES, COMPETITIONS } from "./constants/constants";
 import { FriendlyMatches } from "./components/FriendlyMatches/FriendlyMatches";
-
-import "./App.scss";
 
 const Page = ({
   competition,

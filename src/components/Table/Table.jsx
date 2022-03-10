@@ -1,4 +1,4 @@
-import { HOME_TEAM } from "../../shared/constants";
+import { HOME_TEAM } from "../../constants/constants";
 import { CategoryHeader } from "../CategoryHeader/CategoryHeader";
 import Text, { TEXT_COLOR } from "../Text/Text";
 

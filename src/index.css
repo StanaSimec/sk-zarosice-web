@@ -9,8 +9,7 @@ body,
 @font-face {
   font-family: "Alegreya";
   src: local("Alegreya"),
-    url("./fonts/Alegreya/static/Alegreya-Medium.ttf")
-      format("truetype");
+    url("./fonts/Alegreya/static/Alegreya-Medium.ttf") format("truetype");
 }
 
 @font-face {

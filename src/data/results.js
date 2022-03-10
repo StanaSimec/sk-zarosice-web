@@ -1,10 +1,10 @@
-import { TEAMS } from './constants';
+import { TEAMS } from "../constants/constants";
 
 export const RESULTS = {
   A_TEAM: [
     {
       round: 1,
-      date: new Date('2021-10-31'),
+      date: new Date("2021-10-31"),
       homeTeam: TEAMS.BUKOVANY,
       homeScore: 2,
       awayTeam: TEAMS.ZAROSICE,
@@ -12,7 +12,7 @@ export const RESULTS = {
     },
     {
       round: 13,
-      date: new Date('2021-10-24'),
+      date: new Date("2021-10-24"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 2,
       awayTeam: TEAMS.KNEZDUB,
@@ -20,7 +20,7 @@ export const RESULTS = {
     },
     {
       round: 12,
-      date: new Date('2021-10-16'),
+      date: new Date("2021-10-16"),
       homeTeam: TEAMS.HR_LHOTA_B,
       homeScore: 1,
       awayTeam: TEAMS.ZAROSICE,
@@ -28,7 +28,7 @@ export const RESULTS = {
     },
     {
       round: 11,
-      date: new Date('2021-10-10'),
+      date: new Date("2021-10-10"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 3,
       awayTeam: TEAMS.ST_PODVOROV,
@@ -36,7 +36,7 @@ export const RESULTS = {
     },
     {
       round: 10,
-      date: new Date('2021-10-03'),
+      date: new Date("2021-10-03"),
       homeTeam: TEAMS.KEN_VESELI,
       homeScore: 1,
       awayTeam: TEAMS.ZAROSICE,
@@ -44,7 +44,7 @@ export const RESULTS = {
     },
     {
       round: 9,
-      date: new Date('2021-09-26'),
+      date: new Date("2021-09-26"),
       homeTeam: TEAMS.VLKOS,
       homeScore: 6,
       awayTeam: TEAMS.ZAROSICE,
@@ -52,7 +52,7 @@ export const RESULTS = {
     },
     {
       round: 8,
-      date: new Date('2021-09-19'),
+      date: new Date("2021-09-19"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 2,
       awayTeam: TEAMS.HOVORANY,
@@ -60,7 +60,7 @@ export const RESULTS = {
     },
     {
       round: 7,
-      date: new Date('2021-09-12'),
+      date: new Date("2021-09-12"),
       homeTeam: TEAMS.PETROV,
       homeScore: 1,
       awayTeam: TEAMS.ZAROSICE,
@@ -68,7 +68,7 @@ export const RESULTS = {
     },
     {
       round: 6,
-      date: new Date('2021-09-05'),
+      date: new Date("2021-09-05"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 1,
       awayTeam: TEAMS.DOLNI_BOJANOVICE,
@@ -76,7 +76,7 @@ export const RESULTS = {
     },
     {
       round: 5,
-      date: new Date('2021-08-29'),
+      date: new Date("2021-08-29"),
       homeTeam: TEAMS.DAMBORICE,
       homeScore: 5,
       awayTeam: TEAMS.ZAROSICE,
@@ -84,7 +84,7 @@ export const RESULTS = {
     },
     {
       round: 4,
-      date: new Date('2021-08-22'),
+      date: new Date("2021-08-22"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 0,
       awayTeam: TEAMS.RATISKOVICE,
@@ -92,7 +92,7 @@ export const RESULTS = {
     },
     {
       round: 3,
-      date: new Date('2021-08-15'),
+      date: new Date("2021-08-15"),
       homeTeam: TEAMS.LIPOV,
       homeScore: 2,
       awayTeam: TEAMS.ZAROSICE,
@@ -100,7 +100,7 @@ export const RESULTS = {
     },
     {
       round: 2,
-      date: new Date('2021-08-08'),
+      date: new Date("2021-08-08"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 4,
       awayTeam: TEAMS.ZERAVICE,
@@ -110,7 +110,7 @@ export const RESULTS = {
   U19: [
     {
       round: 1,
-      date: new Date('2021-10-24'),
+      date: new Date("2021-10-24"),
       homeTeam: TEAMS.RATISKOVICE,
       homeScore: 7,
       awayTeam: TEAMS.ZAROSICE,
@@ -118,7 +118,7 @@ export const RESULTS = {
     },
     {
       round: 2,
-      date: new Date('2021-10-16'),
+      date: new Date("2021-10-16"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 8,
       awayTeam: TEAMS.BRUMOVICE,
@@ -126,7 +126,7 @@ export const RESULTS = {
     },
     {
       round: 11,
-      date: new Date('2021-10-09'),
+      date: new Date("2021-10-09"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 9,
       awayTeam: TEAMS.BUKOVANY,
@@ -134,7 +134,7 @@ export const RESULTS = {
     },
     {
       round: 10,
-      date: new Date('2021-10-02'),
+      date: new Date("2021-10-02"),
       homeTeam: TEAMS.CHARVATSKA,
       homeScore: 4,
       awayTeam: TEAMS.ZAROSICE,
@@ -142,7 +142,7 @@ export const RESULTS = {
     },
     {
       round: 9,
-      date: new Date('2021-09-25'),
+      date: new Date("2021-09-25"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 1,
       awayTeam: TEAMS.CEJKOVICE_HOVORANY,
@@ -150,7 +150,7 @@ export const RESULTS = {
     },
     {
       round: 8,
-      date: new Date('2021-09-18'),
+      date: new Date("2021-09-18"),
       homeTeam: TEAMS.VNOROVY,
       homeScore: 3,
       awayTeam: TEAMS.ZAROSICE,
@@ -158,7 +158,7 @@ export const RESULTS = {
     },
     {
       round: 7,
-      date: new Date('2021-09-11'),
+      date: new Date("2021-09-11"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 3,
       awayTeam: TEAMS.KOBYLI_KOBERICE,
@@ -166,7 +166,7 @@ export const RESULTS = {
     },
     {
       round: 6,
-      date: new Date('2021-09-05'),
+      date: new Date("2021-09-05"),
       homeTeam: TEAMS.MILOTICE,
       homeScore: 3,
       awayTeam: TEAMS.ZAROSICE,
@@ -174,7 +174,7 @@ export const RESULTS = {
     },
     {
       round: 4,
-      date: new Date('2021-08-21'),
+      date: new Date("2021-08-21"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 10,
       awayTeam: TEAMS.KOSTELEC,
@@ -182,7 +182,7 @@ export const RESULTS = {
     },
     {
       round: 3,
-      date: new Date('2021-08-14'),
+      date: new Date("2021-08-14"),
       homeTeam: TEAMS.TEMICE_PISEK,
       homeScore: 4,
       awayTeam: TEAMS.ZAROSICE,
@@ -192,7 +192,7 @@ export const RESULTS = {
   U15: [
     {
       round: 1,
-      date: new Date('2021-10-23'),
+      date: new Date("2021-10-23"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 0,
       awayTeam: TEAMS.MILOTICE,
@@ -200,7 +200,7 @@ export const RESULTS = {
     },
     {
       round: 3,
-      date: new Date('2021-10-09'),
+      date: new Date("2021-10-09"),
       homeTeam: TEAMS.PISEK_ZERAVICE,
       homeScore: 0,
       awayTeam: TEAMS.ZAROSICE,
@@ -208,7 +208,7 @@ export const RESULTS = {
     },
     {
       round: 10,
-      date: new Date('2021-10-03'),
+      date: new Date("2021-10-03"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 2,
       awayTeam: TEAMS.PETROV,
@@ -216,7 +216,7 @@ export const RESULTS = {
     },
     {
       round: 8,
-      date: new Date('2021-09-19'),
+      date: new Date("2021-09-19"),
       homeTeam: TEAMS.ZAROSICE,
       homeScore: 6,
       awayTeam: TEAMS.PISEK_ZERAVICE,
@@ -224,7 +224,7 @@ export const RESULTS = {
     },
     {
       round: 7,
-      date: new Date('2021-09-09'),
+      date: new Date("2021-09-09"),
       homeTeam: TEAMS.CEJC_HOVORANY,
       homeScore: 3,
       awayTeam: TEAMS.ZAROSICE,
@@ -232,7 +232,7 @@ export const RESULTS = {
     },
     {
       round: 6,
-      date: new Date('2021-09-04'),
+      date: new Date("2021-09-04"),
       homeTeam: TEAMS.MILOTICE,
       homeScore: 0,
       awayTeam: TEAMS.ZAROSICE,
@@ -240,206 +240,11 @@ export const RESULTS = {
     },
     {
       round: 5,
-      date: new Date('2021-08-29'),
+      date: new Date("2021-08-29"),
       homeTeam: TEAMS.PETROV,
       homeScore: 1,
       awayTeam: TEAMS.ZAROSICE,
       awayScore: 1,
-    },
-  ],
-};
-
-const CURRENT_MATCHES = {
-  A_TEAM: 13,
-  U19: 10,
-  U15: 8,
-};
-
-export const POINTS = {
-  A_TEAM: [
-    {
-      team: TEAMS.RATISKOVICE,
-      points: 36,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 1,
-    },
-    {
-      team: TEAMS.ST_PODVOROV,
-      points: 31,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 2,
-    },
-    {
-      team: TEAMS.VLKOS,
-      points: 29,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 3,
-    },
-    {
-      team: TEAMS.KNEZDUB,
-      points: 17,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 4,
-    },
-    {
-      team: TEAMS.PETROV,
-      points: 17,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 5,
-    },
-    {
-      team: TEAMS.BUKOVANY,
-      points: 17,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 6,
-    },
-    {
-      team: TEAMS.DOLNI_BOJANOVICE,
-      points: 16,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 7,
-    },
-    {
-      team: TEAMS.DAMBORICE,
-      points: 16,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 8,
-    },
-    {
-      team: TEAMS.HR_LHOTA_B,
-      points: 16,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 9,
-    },
-    {
-      team: TEAMS.ZAROSICE,
-      points: 16,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 10,
-    },
-    {
-      team: TEAMS.KEN_VESELI,
-      points: 15,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 11,
-    },
-    {
-      team: TEAMS.LIPOV,
-      points: 15,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 12,
-    },
-    {
-      team: TEAMS.ZERAVICE,
-      points: 9,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 13,
-    },
-    {
-      team: TEAMS.HOVORANY,
-      points: 6,
-      matches: CURRENT_MATCHES.A_TEAM,
-      position: 14,
-    },
-  ],
-  U19: [
-    {
-      team: TEAMS.MILOTICE,
-      points: 19,
-      matches: CURRENT_MATCHES.U19,
-      position: 1,
-    },
-    {
-      team: TEAMS.CHARVATSKA,
-      points: 25,
-      matches: CURRENT_MATCHES.U19,
-      position: 2,
-    },
-    {
-      team: TEAMS.RATISKOVICE,
-      points: 24,
-      matches: CURRENT_MATCHES.U19,
-      position: 3,
-    },
-    {
-      team: TEAMS.KOBYLI_KOBERICE,
-      points: 22,
-      matches: CURRENT_MATCHES.U19,
-      position: 4,
-    },
-    {
-      team: TEAMS.VNOROVY,
-      points: 16,
-      matches: CURRENT_MATCHES.U19,
-      position: 5,
-    },
-    {
-      team: TEAMS.CEJKOVICE_HOVORANY,
-      points: 15,
-      matches: CURRENT_MATCHES.U19,
-      position: 6,
-    },
-    {
-      team: TEAMS.TEMICE_PISEK,
-      points: 13,
-      matches: CURRENT_MATCHES.U19,
-      position: 7,
-    },
-    {
-      team: TEAMS.ZAROSICE,
-      points: 10,
-      matches: CURRENT_MATCHES.U19,
-      position: 8,
-    },
-    {
-      team: TEAMS.BUKOVANY,
-      points: 9,
-      matches: CURRENT_MATCHES.U19,
-      position: 9,
-    },
-    {
-      team: TEAMS.BRUMOVICE,
-      points: 3,
-      matches: CURRENT_MATCHES.U19,
-      position: 10,
-    },
-    {
-      team: TEAMS.KOSTELEC,
-      points: 0,
-      matches: CURRENT_MATCHES.U19,
-      position: 11,
-    },
-  ],
-  U15: [
-    {
-      team: TEAMS.CEJC_HOVORANY,
-      points: 16,
-      matches: CURRENT_MATCHES.U15 - 1,
-      position: 1,
-    },
-    {
-      team: TEAMS.ZAROSICE,
-      points: 15,
-      matches: CURRENT_MATCHES.U15 - 1,
-      position: 2,
-    },
-    {
-      team: TEAMS.PETROV,
-      points: 10,
-      matches: CURRENT_MATCHES.U15,
-      position: 3,
-    },
-    {
-      team: TEAMS.PISEK_ZERAVICE,
-      points: 10,
-      matches: CURRENT_MATCHES.U15,
-      position: 4,
-    },
-    {
-      team: TEAMS.MILOTICE,
-      points: 2,
-      matches: CURRENT_MATCHES.U15,
-      position: 5,
     },
   ],
 };
@@ -468,31 +273,25 @@ export const FRIENDLY_MATCHES = {
       homeTeam: TEAMS.ZAROSICE,
       awayTeam: TEAMS.KLOBOUKY,
       date: new Date(2022, 2 - 1, 19, 13, 0),
-      place: 'UT Dambořice',
+      place: "UT Dambořice",
     },
     {
       homeTeam: TEAMS.ZAROSICE,
       awayTeam: TEAMS.NASEDLOVICE,
       date: new Date(2022, 2 - 1, 27, 12, 0),
-      place: 'UT Dambořice',
+      place: "UT Dambořice",
     },
     {
       homeTeam: TEAMS.ZAROSICE,
       awayTeam: TEAMS.POZORICE,
       date: new Date(2022, 3 - 1, 5, 10, 0),
-      place: 'UT Otnice',
+      place: "UT Otnice",
     },
     {
       homeTeam: TEAMS.ZAROSICE,
       awayTeam: TEAMS.BOLERADICE,
       date: new Date(2022, 3 - 1, 13, 12, 0),
-      place: 'UT Dambořice',
+      place: "UT Dambořice",
     },
   ],
-};
-
-export const COMPETITIONS = {
-  A_TEAM: 'Okresní přebor',
-  U19: 'Okresní přebor',
-  U15: 'Okresní soutěž',
 };

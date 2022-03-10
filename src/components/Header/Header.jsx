@@ -1,12 +1,12 @@
-import classNames from 'classnames';
-import { useState } from 'react';
-import logo from '../../logo.png';
-import { TEAM_CATEGORIES } from '../../shared/constants';
-import { LINKS } from '../../shared/links';
-import Link from '../Link/Link';
-import { TEXT_SIZE } from '../Text/Text';
+import classNames from "classnames";
+import { useState } from "react";
+import logo from "../../logo.png";
+import { TEAM_CATEGORIES } from "../../constants/constants";
+import { LINKS } from "../../constants/constants";
+import Link from "../Link/Link";
+import { TEXT_SIZE } from "../Text/Text";
 
-import './Header.scss';
+import "./Header.scss";
 
 const CategoryLink = ({ prefix }) => {
   return <Link href={LINKS[prefix]} text={TEAM_CATEGORIES[prefix]} />;
@@ -15,31 +15,31 @@ const CategoryLink = ({ prefix }) => {
 const Links = () => {
   return (
     <>
-      <CategoryLink prefix='A_TEAM' />
-      <CategoryLink prefix='U19' />
-      <CategoryLink prefix='U15' />
+      <CategoryLink prefix="A_TEAM" />
+      <CategoryLink prefix="U19" />
+      <CategoryLink prefix="U15" />
     </>
   );
 };
 
 const HeaderLinks = () => {
   return (
-    <div className='links'>
+    <div className="links">
       <Links />
     </div>
   );
 };
 
 const Logo = () => {
-  return <img className='logo' src={logo} alt='logo klubu' />;
+  return <img className="logo" src={logo} alt="logo klubu" />;
 };
 
 const Name = () => {
   return (
-    <div className='name'>
+    <div className="name">
       <Link
-        text='SK Žarošice'
-        href='/'
+        text="SK Žarošice"
+        href="/"
         size={TEXT_SIZE.BIG}
         isMainHeader={true}
       />
@@ -53,16 +53,16 @@ const Burger = ({ isOpen, onClick }) => {
       className={classNames({ burger: true, burger__open: isOpen })}
       onClick={onClick}
     >
-      <span className='bar'></span>
-      <span className='bar'></span>
-      <span className='bar'></span>
+      <span className="bar"></span>
+      <span className="bar"></span>
+      <span className="bar"></span>
     </div>
   );
 };
 
 const DropDownLinks = () => {
   return (
-    <div className='drop-links'>
+    <div className="drop-links">
       <Links />
     </div>
   );
@@ -71,14 +71,14 @@ const DropDownLinks = () => {
 const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   return (
-    <div className='header'>
+    <div className="header">
       <div
         className={classNames({
-          'header-bar': true,
-          'header-bar__bordered': !isBurgerOpen,
+          "header-bar": true,
+          "header-bar__bordered": !isBurgerOpen,
         })}
       >
-        <div className='description'>
+        <div className="description">
           <Logo />
           <Name />
         </div>
