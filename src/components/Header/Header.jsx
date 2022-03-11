@@ -31,7 +31,7 @@ const HeaderLinks = () => {
 };
 
 const Logo = () => {
-  return <img className="logo" src={logo} alt="logo klubu" />;
+  return <img className="logo" src={logo} alt="logo klubu" width='64' height='64'/>;
 };
 
 const Name = () => {
