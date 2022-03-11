@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Table, FriendlyMatches, CategoryHeader, Results, NextMatch } from "./components";
 import { LINKS, TEAM_CATEGORIES, COMPETITIONS } from "./constants";
-import { RESULTS, FRIENDLY_MATCHES, NEXT_MATCH, POINTS } from "./data";
+import { RESULTS, FRIENDLY_MATCHES, POINTS } from "./data";
+import { NextMatchService } from "./service";
 
 const Page = ({
   competition,
@@ -32,7 +33,7 @@ function App() {
           path={LINKS.A_TEAM}
           element={
             <Page
-              nextMatch={NEXT_MATCH.A_TEAM}
+              nextMatch={NextMatchService.getAteamNextMatch()}
               friendlyMatch={FRIENDLY_MATCHES.A_TEAM}
               points={POINTS.A_TEAM}
               results={RESULTS.A_TEAM}
@@ -45,7 +46,7 @@ function App() {
           path={LINKS.U19}
           element={
             <Page
-              nextMatch={NEXT_MATCH.U19}
+              nextMatch={NextMatchService.getU19NextMatch()}
               points={POINTS.U19}
               results={RESULTS.U19}
               competition={COMPETITIONS.U19}
@@ -57,7 +58,7 @@ function App() {
           path={LINKS.U15}
           element={
             <Page
-              nextMatch={NEXT_MATCH.U15}
+              nextMatch={NextMatchService.getU15NextMatch()}
               points={POINTS.U15}
               results={RESULTS.U15}
               competition={COMPETITIONS.U15}
