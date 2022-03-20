@@ -1,17 +1,16 @@
-import { useState, Fragment } from "react";
-import { CategoryHeader } from "../CategoryHeader/CategoryHeader";
-import { Match } from "../Match/Match";
-import Text from "../Text/Text";
+import { useState } from "react";
+import classNames from "classnames";
+import { Match } from "../../components";
 
 import "./MatchPlan.scss";
 
 const DisplayAllMatchButton = ({ onClick, isOpen }) => {
-  const buttonText = isOpen ? "Skrýt" : "Zobrazit";
   return (
-    <div className="showMatchPlanButtonWrapper">
-      <button onClick={onClick} className="showMatchPlanButton">
-        <Text text={`${buttonText} celý rozpis`}></Text>
-      </button>
+    <div className="showMatchPlanWrapper">
+      <div
+        onClick={onClick}
+        className={classNames("triangleIcon", isOpen ? "arrowUp" : "arrowDown")}
+      ></div>
     </div>
   );
 };
@@ -22,13 +21,15 @@ export const MatchPlan = ({ matchPlan }) => {
     setIsMatchDisplayed(!isMatchPlanDisplayed);
   };
   return (
-    <Fragment>
+    <div className="matchPlan">
       <DisplayAllMatchButton
         onClick={onButtonClick}
         isOpen={isMatchPlanDisplayed}
       />
-      {isMatchPlanDisplayed &&
-        matchPlan.map((match) => <Match match={match} key={match.date} />)}
-    </Fragment>
+      <div className="matchPlanComplete">
+        {isMatchPlanDisplayed &&
+          matchPlan.map((match) => <Match match={match} key={match.date} />)}
+      </div>
+    </div>
   );
 };
