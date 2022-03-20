@@ -3,6 +3,14 @@ import { TEAMS } from "../constants/constants";
 export const RESULTS = {
   A_TEAM: [
     {
+      round: 14,
+      date: new Date("2022-03-20"),
+      homeTeam: TEAMS.ZAROSICE,
+      homeScore: 4,
+      awayTeam: TEAMS.BUKOVANY,
+      awayScore: 2,
+    },
+    {
       round: 1,
       date: new Date("2021-10-31"),
       homeTeam: TEAMS.BUKOVANY,
