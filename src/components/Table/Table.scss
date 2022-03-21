@@ -7,8 +7,7 @@
     margin: 1rem;
 
     .points {
-        width: $content-width;
-        min-width: $content-min-width;
+        @include content-width;
         padding-right: 1rem;
         
         th {

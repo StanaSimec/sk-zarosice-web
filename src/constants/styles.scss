@@ -6,5 +6,24 @@ $green: #6cb000e3;
 $mobile-width: 560px;
 $mobile-width-small: 340px;
 $content-min-width: 15rem;
-$content-width: 40%;
 $borderRound: 0.3rem;
+
+@mixin content-width {
+    width: 40%;
+    min-width: 15rem;
+}
+
+@mixin full-centered-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin full-centered-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

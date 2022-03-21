@@ -1,14 +1,10 @@
 @import "src/constants/styles";
 
 .matchPlan {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include full-centered-column;
 
   .showMatchPlanWrapper {
-    width: $content-width;
+    @include content-width;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -32,10 +28,6 @@
   }
 
   .matchPlanComplete {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include full-centered-column;
   }
 }
