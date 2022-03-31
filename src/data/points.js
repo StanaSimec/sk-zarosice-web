@@ -1,7 +1,7 @@
 import { TEAMS } from "../constants/constants";
 
 const CURRENT_MATCHES = {
-  A_TEAM: 14,
+  A_TEAM: 15,
   U19: 10,
   U15: 8,
 };
@@ -10,7 +10,7 @@ export const POINTS = {
   A_TEAM: [
     {
       team: TEAMS.RATISKOVICE,
-      points: 39,
+      points: 42,
       matches: CURRENT_MATCHES.A_TEAM,
       position: 1,
     },
@@ -30,41 +30,41 @@ export const POINTS = {
       team: TEAMS.KNEZDUB,
       points: 17,
       matches: CURRENT_MATCHES.A_TEAM,
-      position: 7,
+      position: 10,
     },
     {
       team: TEAMS.PETROV,
       points: 17,
       matches: CURRENT_MATCHES.A_TEAM,
-      position: 8,
+      position: 11,
     },
     {
       team: TEAMS.BUKOVANY,
-      points: 17,
+      points: 20,
       matches: CURRENT_MATCHES.A_TEAM,
-      position: 9,
+      position: 7,
     },
     {
       team: TEAMS.DOLNI_BOJANOVICE,
-      points: 19,
+      points: 22,
       matches: CURRENT_MATCHES.A_TEAM,
       position: 4,
     },
     {
       team: TEAMS.DAMBORICE,
-      points: 16,
+      points: 19,
       matches: CURRENT_MATCHES.A_TEAM,
-      position: 10,
+      position: 8,
     },
     {
       team: TEAMS.HR_LHOTA_B,
-      points: 19,
+      points: 22,
       matches: CURRENT_MATCHES.A_TEAM,
       position: 5,
     },
     {
       team: TEAMS.ZAROSICE,
-      points: 19,
+      points: 22,
       matches: CURRENT_MATCHES.A_TEAM,
       position: 6,
     },
@@ -76,9 +76,9 @@ export const POINTS = {
     },
     {
       team: TEAMS.LIPOV,
-      points: 16,
+      points: 19,
       matches: CURRENT_MATCHES.A_TEAM,
-      position: 11,
+      position: 9,
     },
     {
       team: TEAMS.ZERAVICE,
@@ -88,9 +88,9 @@ export const POINTS = {
     },
     {
       team: TEAMS.HOVORANY,
-      points: 7,
+      points: 9,
       matches: CURRENT_MATCHES.A_TEAM,
-      position: 14,
+      position: 13,
     },
   ],
   U19: [
