@@ -99,7 +99,7 @@ export const MATCH_PLAN = {
       date: getDate({ month: 4, day: 24, hour: 13, minute: 45 }),
     },
     {
-      homeTeam: TEAMS.KOBYLI_KOBERICE,
+      homeTeam: TEAMS.KOBYLI_BORETICE,
       awayTeam: TEAMS.ZAROSICE,
       date: getDate({ month: 5, day: 1, hour: 14, minute: 0 }),
     },
