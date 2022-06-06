@@ -20,12 +20,15 @@ export const MatchPlan = ({ matchPlan }) => {
   const onButtonClick = () => {
     setIsMatchDisplayed(!isMatchPlanDisplayed);
   };
+  const isMatchPlan = matchPlan.length > 1;
   return (
     <div className="matchPlan">
-      <DisplayAllMatchButton
-        onClick={onButtonClick}
-        isOpen={isMatchPlanDisplayed}
-      />
+      {isMatchPlan && (
+        <DisplayAllMatchButton
+          onClick={onButtonClick}
+          isOpen={isMatchPlanDisplayed}
+        />
+      )}
       <div className="matchPlanComplete">
         {isMatchPlanDisplayed &&
           matchPlan.map((match) => <Match match={match} key={match.date} />)}
