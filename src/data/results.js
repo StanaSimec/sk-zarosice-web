@@ -3,6 +3,14 @@ import { TEAMS } from "../constants/constants";
 export const RESULTS = {
   A_TEAM: [
     {
+      round: 25,
+      date: new Date("2022-06-05"),
+      homeTeam: TEAMS.ZAROSICE,
+      homeScore: 3,
+      awayTeam: TEAMS.HR_LHOTA_B,
+      awayScore: 4,
+    },
+    {
       round: 24,
       date: new Date("2022-05-29"),
       homeTeam: TEAMS.ST_PODVOROV,
@@ -197,6 +205,14 @@ export const RESULTS = {
   ],
   U19: [
     {
+      round: 13,
+      date: new Date("2022-06-05"),
+      homeTeam: TEAMS.BRUMOVICE,
+      homeScore: 0,
+      awayTeam: TEAMS.ZAROSICE,
+      awayScore: 6,
+    },
+    {
       round: 22,
       date: new Date("2022-05-29"),
       homeTeam: TEAMS.BUKOVANY,
@@ -342,6 +358,14 @@ export const RESULTS = {
     },
   ],
   U15: [
+    {
+      round: 13,
+      date: new Date("2022-06-04"),
+      homeTeam: TEAMS.PISEK_ZERAVICE,
+      homeScore: 2,
+      awayTeam: TEAMS.ZAROSICE,
+      awayScore: 5,
+    },
     {
       round: 12,
       date: new Date("2022-05-29"),
