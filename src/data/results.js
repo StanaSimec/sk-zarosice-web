@@ -3,6 +3,14 @@ import { TEAMS } from "../constants/constants";
 export const RESULTS = {
   A_TEAM: [
     {
+      round: 26,
+      date: new Date("2022-06-12"),
+      homeTeam: TEAMS.KNEZDUB,
+      homeScore: 3,
+      awayTeam: TEAMS.ZAROSICE,
+      awayScore: 0,
+    },
+    {
       round: 25,
       date: new Date("2022-06-05"),
       homeTeam: TEAMS.ZAROSICE,
@@ -204,6 +212,14 @@ export const RESULTS = {
     },
   ],
   U19: [
+    {
+      round: 12,
+      date: new Date("2022-06-08"),
+      homeTeam: TEAMS.ZAROSICE,
+      homeScore: 2,
+      awayTeam: TEAMS.RATISKOVICE,
+      awayScore: 5,
+    },
     {
       round: 13,
       date: new Date("2022-06-05"),
